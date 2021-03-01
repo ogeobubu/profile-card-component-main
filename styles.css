@@ -143,5 +143,25 @@ main img {
   gap: 5rem;
 }
 
-@media screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
+  body {
+  }
+
+  body::before {
+    background: none;
+    left: 0;
+  }
+  body::after {
+    background: none;
+    right: 0;
+  }
+  .author img {
+    width: 100%;
+  }
+
+  .name {
+    text-align: center;
+    margin-bottom: 1.8rem;
+    /* margin-bottom: 2rem; */
+  }
 }
